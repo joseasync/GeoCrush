@@ -12,7 +12,7 @@
 
 ### Video Demonstration
 
-[![GeoCrush - Gameplay Demo](https://github.com/user-attachments/assets/daaf13ef-de7e-42e4-a9c1-f97169c88108)](https://youtu.be/niv5-fBG4tU?si=ZU1lZzSa59e70Sha)
+[![GeoCrush - Gameplay Demo](https://github.com/user-attachments/assets/db78bafd-bd76-482c-a67c-76719805a5b1)](https://youtu.be/niv5-fBG4tU?si=ZU1lZzSa59e70Sha)
 
 
 ### Installation
