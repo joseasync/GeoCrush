@@ -9,6 +9,12 @@
 - **Combo System**: Chain matches together for bigger rewards and powerful effects.
 - **Animated Effects**: Enjoy visual effects when gems are matched and cleared.
 
+
+### Video Demonstration
+
+[![GeoCrush - Gameplay Demo](https://github.com/user-attachments/assets/daaf13ef-de7e-42e4-a9c1-f97169c88108)](https://youtu.be/niv5-fBG4tU?si=ZU1lZzSa59e70Sha)
+
+
 ### Installation
 
 1. **Clone the repository**:
@@ -27,12 +33,6 @@
 
 4. **Play the game**:
    - Tap match gems in the AR environment and progress through.
-
-### Video Demonstration
-
-[![GeoCrush - Gameplay Demo](https://github.com/user-attachments/assets/c38f5f64-4035-4a65-a0be-96870b39fdd4)](https://youtu.be/niv5-fBG4tU?si=ZU1lZzSa59e70Sha)
-
-### Screenshots
 
 
 ### Technologies Used
