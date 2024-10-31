@@ -1,22 +1,26 @@
 import RealityKit
 
+enum AssetType: String, CaseIterable {
+    case red, yellow, blue, green
+}
+
 class AssetLoader {
     @MainActor
-    func load(_ asset: Asset) async -> Entity {
+    func load(_ asset: AssetType) async -> Entity {
         let entity: Entity
         switch asset {
         case .red:
             entity = ModelEntity(mesh: .generateSphere(radius: 0.5), materials: [SimpleMaterial(color: .red, isMetallic: false)])
-            entity.name = "Red"
+            entity.name = "red"
         case .yellow:
             entity = ModelEntity(mesh: .generateBox(size: 1.0), materials: [SimpleMaterial(color: .yellow, isMetallic: false)])
-            entity.name = "Yellow"
+            entity.name = "yellow"
         case .blue:
             entity = ModelEntity(mesh: .generateSphere(radius: 0.5), materials: [SimpleMaterial(color: .blue, isMetallic: false)])
-            entity.name = "Blue"
+            entity.name = "blue"
         case .green:
             entity = ModelEntity(mesh: .generateBox(size: 1.0), materials: [SimpleMaterial(color: .green, isMetallic: false)])
-            entity.name = "Green"
+            entity.name = "green"
         }
         entity.generateCollisionShapes(recursive: false)
 
@@ -32,9 +36,3 @@ class AssetLoader {
     }
 }
 
-enum Asset {
-    case red
-    case yellow
-    case blue
-    case green
-}

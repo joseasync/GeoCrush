@@ -83,6 +83,7 @@ class BoardManager {
             try await Task.sleep(nanoseconds: 1_000_000_000)
             playSound(sound: .removed)
             await self.entityManager.removeMatches(matchingEntities)
+            await self.entityManager.updateScore(for: matchingEntities.first!.entity.name, amount: matchingEntities.count)
         }
         
         //Check if the new tiles board has matches

@@ -57,12 +57,13 @@ class BoardManagerTests: XCTestCase {
         XCTAssertFalse(mockEntityManager.moveDownEntitiesCalled)
     }
     
+    @MainActor
     func testValidateAllTilesRemovesMatches() async {
-        let matchingEntity1 = await Entity()
+        let matchingEntity1 = Entity()
         matchingEntity1.name = "red"
-        let matchingEntity2 = await Entity()
+        let matchingEntity2 = Entity()
         matchingEntity2.name = "red"
-        let matchingEntity3 = await Entity()
+        let matchingEntity3 =  Entity()
         matchingEntity3.name = "red"
         
         mockEntityManager.entities = [

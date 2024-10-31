@@ -19,6 +19,7 @@ class GameController {
     private func setupGame() {
         Task { @MainActor in
             await entityManager.populateBoard()
+            await entityManager.setupScoreboard()
             cameraManager.adjustCameraPosition()
         }
     }

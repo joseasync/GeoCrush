@@ -26,6 +26,6 @@ class CameraManager {
         let totalHeight = Float(columnCount) * objectSpace
         let maxDimension = max(totalWidth, totalHeight)
         let cameraDistance = maxDimension * objectSpace + 5
-        camera.look(at: [0, 0, 0], from: [0, 0, -cameraDistance], relativeTo: root)
+        camera.look(at: [0, 0, 0], from: [0, 0, +cameraDistance], relativeTo: root)
     }
 }
